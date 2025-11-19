@@ -122,7 +122,7 @@ function App() {
         }}
       />
 
-      {/* Crescent Moon */}
+      {/* Moon (no dark masking disc) */}
       <div
         className="absolute left-1/2 -translate-x-1/2"
         style={{ top: '4.5vh' }}
@@ -139,22 +139,7 @@ function App() {
             boxShadow:
               '0 0 8px rgba(200,220,255,0.9), 0 0 28px rgba(130,170,255,0.45), 0 0 70px rgba(90,130,220,0.25)',
           }}
-        >
-          {/* Dark side masking disc to form thin crescent */}
-          <div
-            className="absolute"
-            style={{
-              top: '-2%',
-              left: '24%', // shift to carve a thin, sharp crescent
-              width: '104%',
-              height: '104%',
-              borderRadius: '50%',
-              background:
-                'radial-gradient(circle at 45% 50%, rgba(4,9,16,0.98) 40%, rgba(2,6,12,1) 70%)',
-              filter: 'blur(0.3px)',
-            }}
-          />
-        </div>
+        />
       </div>
 
       {/* Strong vignette to push edges to near black */}
