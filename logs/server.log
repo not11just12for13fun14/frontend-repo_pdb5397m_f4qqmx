@@ -3,7 +3,55 @@
 > vite
 
 
-  VITE v5.4.20  ready in 292 ms
+  VITE v5.4.20  ready in 227 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.52.18:3000/
+2:52:45 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/App.jsx:108:106: ERROR: Unterminated string literal
+2:52:46 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/App.jsx:108:106: ERROR: Unterminated string literal
+  Plugin: vite:esbuild
+  File: /home/workspace/src/App.jsx:108:106
+  
+  Unterminated string literal
+  106|              'radial-gradient(500px 320px at 50% 18%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0) 100%)',
+  107|            backgroundImage:
+  108|              'radial-gradient(120px 80px at 40% 20%, rgba(170,210,255,0.12) 0%, rgba(170,210,255,0.0) 70%),
+     |                                                                                                            ^
+  109|               radial-gradient(140px 90px at 60% 22%, rgba(170,210,255,0.10) 0%, rgba(170,210,255,0.0) 70%)',
+  110|            backgroundBlendMode: 'screen',
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+2:53:10 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/App.jsx:108:106: ERROR: Unterminated string literal
+  Plugin: vite:esbuild
+  File: /home/workspace/src/App.jsx:108:106
+  
+  Unterminated string literal
+  106|              'radial-gradient(500px 320px at 50% 18%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0) 100%)',
+  107|            backgroundImage:
+  108|              'radial-gradient(120px 80px at 40% 20%, rgba(170,210,255,0.12) 0%, rgba(170,210,255,0.0) 70%),
+     |                                                                                                            ^
+  109|               radial-gradient(140px 90px at 60% 22%, rgba(170,210,255,0.10) 0%, rgba(170,210,255,0.0) 70%)',
+  110|            backgroundBlendMode: 'screen',
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)

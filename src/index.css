@@ -31,31 +31,52 @@
   }
 }
 
-/* Custom utility classes for shadcn/ui patterns */
-@layer utilities {
-  .animate-in {
-    animation-name: animateIn;
-    animation-duration: 350ms;
-    --tw-enter-opacity: initial;
-    --tw-enter-scale: initial;
-    --tw-enter-rotate: initial;
-    --tw-enter-translate-x: initial;
-    --tw-enter-translate-y: initial;
-  }
-
-  .animate-out {
-    animation-name: animateOut;
-    animation-duration: 350ms;
-    --tw-exit-opacity: initial;
-    --tw-exit-scale: initial;
-    --tw-exit-rotate: initial;
-    --tw-exit-translate-x: initial;
-    --tw-exit-translate-y: initial;
-  }
-}
-
 /* Subtle star twinkle */
 @keyframes twinkle {
   0% { opacity: 0.55; }
   100% { opacity: 0.95; }
+}
+
+/* Guiding light gentle float (organic-ish loop) */
+@keyframes floatXY {
+  0%   { transform: translate(-50%, 0) scale(1); }
+  25%  { transform: translate(-52%, 1.2vh) scale(1.02); }
+  50%  { transform: translate(-50%, 2.0vh) scale(1); }
+  75%  { transform: translate(-48%, 1.0vh) scale(0.99); }
+  100% { transform: translate(-50%, 0) scale(1); }
+}
+
+/* Slow soft pulsing of brightness/size */
+@keyframes softPulse {
+  0%   { filter: drop-shadow(0 0 16px rgba(190,220,255,0.65)) drop-shadow(0 0 40px rgba(120,170,255,0.35)); opacity: 0.95; }
+  50%  { filter: drop-shadow(0 0 22px rgba(200,230,255,0.85)) drop-shadow(0 0 64px rgba(140,190,255,0.50)); opacity: 1; }
+  100% { filter: drop-shadow(0 0 16px rgba(190,220,255,0.65)) drop-shadow(0 0 40px rgba(120,170,255,0.35)); opacity: 0.95; }
+}
+
+/* Caustics slow motion */
+@keyframes causticsMove {
+  0%   { background-position: 0% 0%, 0% 0%; }
+  50%  { background-position: 30% 10%, -20% 15%; }
+  100% { background-position: 0% 0%, 0% 0%; }
+}
+
+/* Particle layers drifting for parallax */
+@keyframes driftDownSlow {
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(40px); }
+}
+@keyframes driftSideSlow {
+  0%   { transform: translateX(0px); }
+  100% { transform: translateX(-30px); }
+}
+@keyframes driftDiagonal {
+  0%   { transform: translate(0px, 0px); }
+  100% { transform: translate(-40px, 40px); }
+}
+
+/* Water surface ripple distortion strength modulation (used on displacement scale via CSS var) */
+@keyframes rippleStrength {
+  0% { --disp: 8; }
+  50% { --disp: 12; }
+  100% { --disp: 8; }
 }
