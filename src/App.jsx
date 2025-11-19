@@ -104,9 +104,10 @@ function App() {
             'radial-gradient(500px 320px at 50% 18%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0) 100%)',
           WebkitMaskImage:
             'radial-gradient(500px 320px at 50% 18%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0) 100%)',
-          backgroundImage:
-            'radial-gradient(120px 80px at 40% 20%, rgba(170,210,255,0.12) 0%, rgba(170,210,255,0.0) 70%),
-             radial-gradient(140px 90px at 60% 22%, rgba(170,210,255,0.10) 0%, rgba(170,210,255,0.0) 70%)',
+          backgroundImage: `
+            radial-gradient(120px 80px at 40% 20%, rgba(170,210,255,0.12) 0%, rgba(170,210,255,0.0) 70%),
+            radial-gradient(140px 90px at 60% 22%, rgba(170,210,255,0.10) 0%, rgba(170,210,255,0.0) 70%)
+          `,
           backgroundBlendMode: 'screen',
           filter: 'blur(8px) contrast(120%)',
           animation: 'causticsMove 26s ease-in-out infinite',
