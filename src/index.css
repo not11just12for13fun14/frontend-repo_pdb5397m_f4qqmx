@@ -15,10 +15,19 @@
   html {
     font-family: var(--font-sans);
     font-feature-settings: "rlig" 1, "calt" 1;
+    height: 100%;
+    background: #000;
   }
 
   body {
     @apply antialiased;
+    height: 100%;
+    overflow: hidden; /* lock the page to a non-scrollable viewport */
+    background: #000; /* deep black base */
+  }
+
+  #root {
+    height: 100%;
   }
 }
 
@@ -43,4 +52,10 @@
     --tw-exit-translate-x: initial;
     --tw-exit-translate-y: initial;
   }
+}
+
+/* Subtle star twinkle */
+@keyframes twinkle {
+  0% { opacity: 0.55; }
+  100% { opacity: 0.95; }
 }
